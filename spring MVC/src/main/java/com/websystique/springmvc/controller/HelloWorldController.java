@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.developerstack.service.UserService;
 
 @Controller
-@RequestMapping("/yassin")
+@RequestMapping("/person")
 public class HelloWorldController {
 @Autowired
 	private UserService userService;
@@ -15,7 +15,7 @@ public class HelloWorldController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String sayHello(ModelMap model) {
 		model.addAttribute("greeting", "Hello World from Spring 4 MVC");
-		return "welcomeYassine";
+		return "welcome";
 	}
 }
 public void validateUser(Map user, HttpServletRequest request) {
